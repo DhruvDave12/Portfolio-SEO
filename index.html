@@ -1,50 +1,247 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />         
-    <title>🏀Akhilesh Manda</title>
-  </head>
-  <body>
-    <section id="intro">
-      <div class="content">
-        <h3 class="animate__animated animate__zoomIn">Hello, I am</h3>
-        <h1 class="animate__animated animate__zoomIn">Akhilesh Manda</h1>
-        <h2 class="animate__animated animate__zoomIn">I am a <span></span></h2>
-      </div>
-    </section>
-    <section id="about">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhilesh Manda | Computer Science Student & Developer Portfolio | IIIT Vadodara, Bengaluru</title>
+    <meta name="description" content="Explore Akhilesh Manda's portfolio: a Computer Science student at IIIT Vadodara, experienced in Python, Flutter, & web development. Discover hackathon-winning projects, tech skills, and leadership roles.">
+    <meta name="keywords" content="Akhilesh Manda, Computer Science, IIIT Vadodara, Flutter, Python, Web Development, Java, Developer Portfolio, Hackathon Winner, Bengaluru, Software Engineer, Student">
+    <link rel="canonical" href="https://akhileshmanda.github.io/Portfolio-SEO/">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://akhileshmanda.github.io/Portfolio-SEO/">
+    <meta property="og:title" content="Akhilesh Manda | Computer Science Student & Developer Portfolio | IIIT Vadodara, Bengaluru">
+    <meta property="og:description" content="Explore Akhilesh Manda's portfolio: a Computer Science student at IIIT Vadodara, experienced in Python, Flutter, & web development. Discover hackathon-winning projects, tech skills, and leadership roles.">
+    <meta property="og:image" content="https://akhileshmanda.github.io/Portfolio-SEO/images/profile-social.jpg"> <!-- Placeholder image for social sharing -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://akhileshmanda.github.io/Portfolio-SEO/">
+    <meta property="twitter:title" content="Akhilesh Manda | Computer Science Student & Developer Portfolio | IIIT Vadodara, Bengaluru">
+    <meta property="twitter:description" content="Explore Akhilesh Manda's portfolio: a Computer Science student at IIIT Vadodara, experienced in Python, Flutter, & web development. Discover hackathon-winning projects, tech skills, and leadership roles.">
+    <meta property="twitter:image" content="https://akhileshmanda.github.io/Portfolio-SEO/images/profile-social.jpg"> <!-- Placeholder image for social sharing -->
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Akhilesh Manda",
+      "jobTitle": "Computer Science Student & Developer",
+      "url": "https://akhileshmanda.github.io/Portfolio-SEO/",
+      "image": "https://akhileshmanda.github.io/Portfolio-SEO/images/akhilesh-manda-profile.jpg",
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Indian Institute of Information Technology Vadodara"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/akhileshmanda/",
+        "https://github.com/akhileshmanda",
+        "https://www.youtube.com/@AlphaTricksXtreme"
+      ],
+      "knowsAbout": [
+        "Python", "Java", "Flutter", "Web Development", "Machine Learning", "Hackathons", "Software Engineering", "Toastmasters", "Leadership", "Basketball"
+      ],
+      "description": "Akhilesh Manda is a Computer Science student at IIIT Vadodara, blending strong technical skills in Python, Flutter, and web development with leadership, communication, and entrepreneurial spirit."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Akhilesh Manda's Developer Portfolio",
+      "url": "https://akhileshmanda.github.io/Portfolio-SEO/",
+      "description": "Akhilesh Manda's personal portfolio showcasing his Computer Science skills, projects, achievements, and aspirations.",
+      "publisher": {
+        "@type": "Person",
+        "name": "Akhilesh Manda"
+      }
+    }
+    </script>
+
+    <!-- Basic CSS for readability - actual styling would be in a separate file -->
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        header { background: #333; color: #fff; padding: 1rem 0; text-align: center; }
+        header nav ul { padding: 0; list-style: none; display: flex; justify-content: center; }
+        header nav ul li { margin: 0 15px; }
+        header nav ul li a { color: #fff; text-decoration: none; }
+        .container { width: 80%; margin: auto; overflow: hidden; padding: 20px 0; }
+        section { background: #fff; margin-bottom: 20px; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1, h2, h3 { color: #333; }
+        h1 { font-size: 2.5em; text-align: center; margin-bottom: 0.5em; }
+        h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 20px; }
+        h3 { color: #555; }
+        .hero { text-align: center; padding: 50px 0; background: #e2e2e2; margin-bottom: 20px; border-radius: 8px; }
+        .hero p { font-size: 1.2em; max-width: 800px; margin: 20px auto; }
+        .btn { display: inline-block; background: #007bff; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin: 10px; transition: background-color 0.3s ease; }
+        .btn:hover { background: #0056b3; }
+        .skills ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; }
+        .skills ul li { background: #eee; padding: 8px 15px; margin: 5px; border-radius: 5px; }
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .project-item { border: 1px solid #ddd; padding: 15px; border-radius: 8px; }
+        .project-item img { max-width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px; }
+        footer { background: #333; color: #fff; text-align: center; padding: 20px 0; margin-top: 20px; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 4px solid #007bff; }
+        @media (max-width: 768px) {
+            .container { width: 95%; }
+            header nav ul { flex-direction: column; }
+            header nav ul li { margin-bottom: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="sr-only">Skip to main content</a>
+    <header>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" class="container">
+        <section class="hero">
+            <img src="images/akhilesh-manda-profile.jpg" alt="Akhilesh Manda professional headshot" class="profile-img" loading="lazy">
+            <h1>Akhilesh Manda - Computer Science Student & Developer</h1>
+            <p>A passionate and driven Computer Science student at <strong>IIIT Vadodara</strong>, specializing in <strong>Python, Flutter, and web development</strong>. I thrive on exploring new technologies, solving complex problems, and leading impactful projects, from hackathon wins to entrepreneurial ventures in <strong>Bengaluru, India</strong>.</p>
+            <a href="#projects" class="btn">View My Projects</a>
+            <a href="https://www.linkedin.com/in/akhileshmanda/" target="_blank" rel="noopener noreferrer" class="btn">Connect on LinkedIn</a>
+            <!-- Consider adding a "Download Resume" button if a resume is available -->
+        </section>
+
+        <section id="about">
             <h2>About Me</h2>
+            <p>I am Akhilesh Manda, an aspiring Software Engineer deeply passionate about technology and its power to innovate. My journey at <strong>IIIT Vadodara</strong> has equipped me with a strong foundation in Computer Science, complemented by hands-on experience in various programming languages and frameworks. Beyond coding, I am a seasoned Toastmaster, a sports captain, and a mentor, embodying a blend of technical prowess and leadership. My entrepreneurial spirit drives my YouTube channel, <em>Alpha Tricks Xtreme</em>, and my future goal of becoming a TED speaker.</p>
+            <h3>My Core Philosophy:</h3>
+            <ul>
+                <li><strong>Motivating:</strong> Inspiring teams and peers towards common goals.</li>
+                <li><strong>Fun-loving:</strong> Believing joy is key to creativity and collaboration.</li>
+                <li><strong>Perfectionist:</strong> Committed to delivering high-quality, polished solutions.</li>
+            </ul>
+            <p>Always eager to learn and contribute, I'm constantly seeking opportunities to grow and make a tangible impact. Explore my <a href="#skills">tech skills</a> and diverse <a href="#projects">projects</a> below.</p>
+        </section>
 
-            </p>
+        <section id="skills">
+            <h2>Tech Skills</h2>
+            <p>My expertise spans across various domains, enabling me to build robust and scalable applications. My primary focus areas include:</p>
+            <ul class="skills">
+                <li><strong>Python</strong> (60%) - Data Science, Machine Learning, Backend</li>
+                <li><strong>Java</strong> (85%) - Object-Oriented Programming, Android Development</li>
+                <li><strong>Flutter</strong> (80%) - Cross-platform Mobile App Development</li>
+                <li><strong>Web Development</strong> (HTML, CSS, JavaScript) (75%) - Front-end, Responsive Design</li>
+                <li>MySQL (70%) - Database Management</li>
+                <li>Figma (65%) - UI/UX Design</li>
+                <li>Sqllite (70%) - Embedded Databases</li>
+                <li>Tensorflow (50%) - Machine Learning Models</li>
+                <li>AWS (40%) - Cloud Services</li>
+                <!-- More detailed explanation of skill application can be added to project descriptions -->
+            </ul>
+            <p>I enjoy applying these skills to build innovative solutions, as showcased in my <a href="#projects">project section</a>.</p>
+        </section>
 
-            <p>Hi, I am Akhilesh Manda. I live in the Silicon Valley of India, Bengaluru.I am currently pursuing a Computer Science degree @IIIT Vadodara. Motivating, Fun and Perfectionist are some of the qualities that my closest friends will tell you that I possess. I enjoy meeting different people and communicating with them. I also spend my weekends attending toastmaster clubs and occasionally a few MUN’s.
-    
-              
-            <p> I love exploring new technolgies and build fun apps with them .  This Web Portfolio is my first web dev project Hope you Like it.😊</p>
-               
-            
-          </div>
-        </div>
-      </div>
-    </section>
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <p>A collection of my work, demonstrating my problem-solving abilities and technical skills. Each project reflects my commitment to innovation and learning.</p>
+            <div class="project-grid">
+                <article class="project-item">
+                    <h3>Vax Fam: Encourage others to Vacccinate themselves.</h3>
+                    <img src="images/project-vaxfam.jpg" alt="Screenshot of Vax Fam vaccine encouragement application interface" loading="lazy">
+                    <p><strong>Technologies:</strong> Flutter, Sqllite, Figma</p>
+                    <p>A mobile application designed to promote vaccine awareness and encouragement. Vax Fam uses an intuitive UI to help users track vaccination progress and share positive messages.</p>
+                    <p><a href="https://github.com/akhileshmanda/Vax-Fam" target="_blank" rel="noopener noreferrer">GitHub Repo</a> | <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a> (if available)</p>
+                    <p><strong>My Role:</strong> Led the Flutter development, UI/UX design, and local database integration for user data management.</p>
+                </article>
 
- 
-           <!------------------------------------------------------------------------------- Goals -------------------------------------------------------------------------------->
-          <div class="col-12">
-            <h2>Goals</h2>
-            <p>
-              I am a goal-oriented person. I work hard and work smart to reach my goal. My short term goals are to build upon the coding languages I have begun to learn and eventually take part in events and hackathons, I also want to keep my fitness levels up and try to play basketball at a higher level. I  enjoy meeting new people and getting to know them, so my goal is to make as many friends as possible as soon as I start my offline mode of  classes.
+                <article class="project-item">
+                    <h3>Retropedia: Old is Gold!</h3>
+                    <img src="images/project-retropedia.jpg" alt="Screenshot of Retropedia, an application celebrating retro content" loading="lazy">
+                    <p><strong>Technologies:</strong> Flutter, Firebase, API Integration</p>
+                    <p>A Flutter-based application aimed at bringing nostalgic content to users. Retropedia curates classic media, allowing users to explore and rediscover "old is gold" content with a modern interface.</p>
+                    <p><a href="https://github.com/akhileshmanda/Retropedia" target="_blank" rel="noopener noreferrer">GitHub Repo</a> | <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a> (if available)</p>
+                    <p><strong>My Role:</strong> Developed core features, integrated third-party APIs for content, and ensured a smooth user experience on mobile platforms.</p>
+                </article>
 
-              <br>
-              <br>
+                <article class="project-item">
+                    <h3>AID: And Its Done! (Hackathon Winner)</h3>
+                    <img src="images/project-aid.jpg" alt="Screenshot of AID: And Its Done! hackathon project interface" loading="lazy">
+                    <p><strong>Technologies:</strong> Flutter, Node.js, Firebase</p>
+                    <p>A winning project from the "Tidy the hack up (MLH)" hackathon, AID focuses on task management and productivity, streamlining daily workflows with smart features.</p>
+                    <p><a href="https://github.com/akhileshmanda/AID" target="_blank" rel="noopener noreferrer">GitHub Repo</a> | <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a> (if available)</p>
+                    <p><strong>My Role:</strong> Contributed significantly to the Flutter front-end, designed intuitive user flows, and helped integrate backend services.</p>
+                </article>
 
+                <article class="project-item">
+                    <h3>Fashion detection using ML</h3>
+                    <img src="images/project-fashion-ml.jpg" alt="Screenshot of fashion detection application using machine learning" loading="lazy">
+                    <p><strong>Technologies:</strong> Python, TensorFlow, Keras</p>
+                    <p>An experimental machine learning project focused on detecting and classifying fashion items from images. This project demonstrates practical application of deep learning for computer vision tasks.</p>
+                    <p><a href="https://github.com/akhileshmanda/fashion-detection-ml" target="_blank" rel="noopener noreferrer">GitHub Repo</a></p>
+                    <p><strong>My Role:</strong> Developed and trained the ML model, preprocessed datasets, and evaluated model performance.</p>
+                </article>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
 
-             Sports has been an integral part of my life so my long term goal will be to promote sports amongst the youngsters, I have already started my journey by teaching some of the kids in my society the game of basketball. I also want to become succesfull coder and entrepreneur in the future. Listening to many ted talks has motivated me. I would love it if I ever were given a chance to become a ted speaker.
-          </div>
-    </section>
-  </body>
+        <section id="achievements">
+            <h2>Achievements & Roles</h2>
+            <p>Highlights of my journey, showcasing leadership, collaboration, and recognition in various fields.</p>
+            <ul>
+                <li><strong>First Place:</strong> Tidy the hack up (MLH) - Recognized for innovative solutions at a major hackathon (project: <a href="#projects">AID: And Its Done!</a>).</li>
+                <li><strong>Co-founder:</strong> Alpha Tricks Xtreme - Spearheading an entrepreneurial venture, showcasing creativity and initiative on YouTube.</li>
+                <li><strong>Sports Captain:</strong> Demonstrated leadership and teamwork in athletic pursuits.</li>
+                <li><strong>Mentor:</strong> Guided and supported peers in academic and technical endeavors.</li>
+                <li><strong>Toastmaster:</strong> Developed strong public speaking and leadership skills, essential for effective communication in tech.</li>
+                <!-- Add other achievements from the context -->
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>I am actively seeking opportunities for internships, collaborations, or discussions on exciting tech ventures. Feel free to reach out!</p>
+            <p>Connect with me:</p>
+            <ul>
+                <li>Email: <a href="mailto:akhileshmanda@example.com">akhileshmanda@example.com</a> (Placeholder - use actual email)</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/akhileshmanda/" target="_blank" rel="noopener noreferrer">Akhilesh Manda</a></li>
+                <li>GitHub: <a href="https://github.com/akhileshmanda" target="_blank" rel="noopener noreferrer">akhileshmanda</a></li>
+                <li>YouTube: <a href="https://www.youtube.com/@AlphaTricksXtreme" target="_blank" rel="noopener noreferrer">Alpha Tricks Xtreme</a></li>
+            </ul>
+            <p>Or send me a message:</p>
+            <form action="#" method="POST">
+                <p>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="subject">Subject:</label><br>
+                    <input type="text" id="subject" name="subject">
+                </p>
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </p>
+                <p>
+                    <button type="submit" class="btn">Send Message</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Akhilesh Manda. All rights reserved.</p>
+        <p>Built with passion for Computer Science & Development.</p>
+    </footer>
+</body>
 </html>
+```
