@@ -1,50 +1,698 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />         
-    <title>🏀Akhilesh Manda</title>
-  </head>
-  <body>
-    <section id="intro">
-      <div class="content">
-        <h3 class="animate__animated animate__zoomIn">Hello, I am</h3>
-        <h1 class="animate__animated animate__zoomIn">Akhilesh Manda</h1>
-        <h2 class="animate__animated animate__zoomIn">I am a <span></span></h2>
-      </div>
-    </section>
-    <section id="about">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <h2>About Me</h2>
-
-            </p>
-
-            <p>Hi, I am Akhilesh Manda. I live in the Silicon Valley of India, Bengaluru.I am currently pursuing a Computer Science degree @IIIT Vadodara. Motivating, Fun and Perfectionist are some of the qualities that my closest friends will tell you that I possess. I enjoy meeting different people and communicating with them. I also spend my weekends attending toastmaster clubs and occasionally a few MUN’s.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-              
-            <p> I love exploring new technolgies and build fun apps with them .  This Web Portfolio is my first web dev project Hope you Like it.😊</p>
-               
-            
-          </div>
+    <!-- Title Tag -->
+    <title>Thiel Fellowship | $200,000 Grant for Young Entrepreneurs & Innovators | Skip College, Build Your Venture</title>
+    
+    <!-- Meta Description -->
+    <meta name="description" content="Unlock your potential with the Thiel Fellowship: get a $200K grant, mentorship & network access to build your venture. Skip college, innovate, and make your ideas a reality. Apply now!">
+    
+    <!-- Meta Keywords (Comprehensive list covering primary, secondary, and long-tail opportunities) -->
+    <meta name="keywords" content="Thiel Fellowship, Peter Thiel Fellowship, $200,000 grant, young entrepreneurs, skip college startup, build new ventures, alternative education, innovation program, Silicon Valley network, entrepreneurial support, startup funding young people, non-traditional path, Thiel Foundation, Thiel Fellows alumni, Thiel Fellowship application, Thiel Fellowship requirements, Thiel Fellowship success stories, college alternative for entrepreneurs, startup funding without college, early stage venture capital, entrepreneurship grants, tech entrepreneurship program, leaving college for startup, innovation grants for youth, startup accelerator for young founders, mentorship for young entrepreneurs, venture building program, disruptive innovation grants, how to apply for Thiel Fellowship, Thiel Fellowship eligibility criteria, benefits of Thiel Fellowship network, Thiel Fellowship versus college, is the Thiel Fellowship worth it, Thiel Fellowship application deadlines, Peter Thiel's philosophy on education, grants for young tech founders">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.example.com/thiel-fellowship/">
+    
+    <!-- Open Graph Tags for Social Media (Enhances sharing on platforms like Facebook, LinkedIn) -->
+    <meta property="og:title" content="Thiel Fellowship | $200,000 Grant for Young Entrepreneurs & Innovators">
+    <meta property="og:description" content="Unlock your potential with the Thiel Fellowship: get a $200K grant, mentorship & network access to build your venture. Skip college, innovate, and make your ideas a reality. Apply now!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.example.com/thiel-fellowship/">
+    <meta property="og:image" content="https://www.example.com/images/thiel-fellowship-social.jpg"> <!-- Placeholder: A high-quality image representing the fellowship -->
+    <meta property="og:site_name" content="Thiel Fellowship">
+    
+    <!-- Twitter Card Tags (Optimizes sharing on Twitter) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ThielFellowship"> <!-- Placeholder: Official Twitter handle -->
+    <meta name="twitter:creator" content="@ThielFellowship">
+    <meta name="twitter:title" content="Thiel Fellowship | $200,000 Grant for Young Entrepreneurs & Innovators">
+    <meta name="twitter:description" content="Unlock your potential with the Thiel Fellowship: get a $200K grant, mentorship & network access to build your venture. Skip college, innovate, and make your ideas a reality. Apply now!">
+    <meta name="twitter:image" content="https://www.example.com/images/thiel-fellowship-twitter.jpg"> <!-- Placeholder: A high-quality image for Twitter card -->
+
+    <!-- Favicon (Optional, but recommended) -->
+    <link rel="icon" href="https://www.example.com/favicon.ico" type="image/x-icon">
+
+    <!-- Basic CSS for professional look, readability, and mobile-friendliness -->
+    <style>
+        :root {
+            --primary-color: #000; /* Black for text */
+            --secondary-color: #333; /* Darker grey for some elements */
+            --accent-color: #f0c300; /* Gold/Yellow for highlights, often associated with Thiel */
+            --light-bg: #f9f9f9;
+            --dark-bg: #1a1a1a;
+            --text-color-light: #fff;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--primary-color);
+            background-color: var(--light-bg);
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--dark-bg);
+            color: var(--text-color-light);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; /* Allow wrapping on small screens */
+        }
+
+        .logo a {
+            color: var(--text-color-light);
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping */
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: var(--text-color-light);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a.btn-primary {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            padding: 8px 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        nav ul li a:hover, nav ul li a:focus {
+            color: var(--accent-color);
+        }
+        nav ul li a.btn-primary:hover {
+            background-color: #e0b300;
+            color: var(--primary-color);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://www.example.com/images/hero-bg.jpg') no-repeat center center/cover; /* Placeholder hero image */
+            color: var(--text-color-light);
+            text-align: center;
+            padding: 100px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 500px;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        
+        .hero h3 {
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            color: var(--accent-color);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin-bottom: 40px;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .btn-primary:hover, .btn-primary:focus {
+            background-color: #e0b300; /* Slightly darker gold */
+            transform: translateY(-2px);
+        }
+
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: var(--secondary-color);
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            color: var(--secondary-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        .section-intro-text {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px auto;
+            font-size: 1.15em;
+            color: #555;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .grid-item {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .grid-item h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: var(--accent-color);
+        }
+
+        .grid-item p {
+            font-size: 1.05em;
+            color: #555;
+        }
+
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+        .media-mentions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .media-mentions a {
+            display: block; /* Ensure the entire logo area is clickable */
+            line-height: 0; /* Remove extra space below image */
+        }
+        .media-mentions img {
+            max-height: 50px;
+            width: auto;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: filter 0.3s ease, opacity 0.3s ease;
+        }
+
+        .media-mentions img:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        .faq-item {
+            background-color: #fff;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+
+        .faq-item summary {
+            font-weight: bold;
+            padding: 20px;
+            cursor: pointer;
+            outline: none;
+            background-color: var(--light-bg);
+            border-bottom: 1px solid #eee;
+            transition: background-color 0.3s ease;
+            font-size: 1.1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-item summary::after {
+            content: '+';
+            font-size: 1.5em;
+            margin-left: 10px;
+        }
+
+        .faq-item[open] summary::after {
+            content: '-';
+        }
+
+        .faq-item summary:hover {
+            background-color: #f0f0f0;
+        }
+
+        .faq-item p {
+            padding: 15px 20px;
+            margin: 0;
+            color: #444;
+        }
+
+        .cta-section {
+            background-color: var(--dark-bg);
+            color: var(--text-color-light);
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .cta-section h2 {
+            color: var(--text-color-light);
+            margin-bottom: 30px;
+        }
+        
+        .cta-section h2::after {
+            background-color: var(--accent-color);
+        }
+
+        .cta-section p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--text-color-light);
+            text-align: center;
+            padding: 30px 0;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer .social-links {
+            margin-top: 15px;
+        }
+
+        footer .social-links a {
+            color: var(--text-color-light);
+            margin: 0 10px;
+            font-size: 1.5em;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            .hero h3 {
+                font-size: 1.4em;
+            }
+            nav ul {
+                flex-direction: column;
+                margin-top: 15px;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
+            h2 {
+                font-size: 2em;
+            }
+            h3 {
+                font-size: 1.5em;
+            }
+            .media-mentions {
+                gap: 15px;
+            }
+            .media-mentions img {
+                max-height: 40px;
+            }
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 60px 20px;
+            }
+            .hero h1 {
+                font-size: 2em;
+            }
+            .hero h3 {
+                font-size: 1.2em;
+            }
+            .logo a {
+                font-size: 20px;
+            }
+            .logo img {
+                height: 30px;
+            }
+            nav {
+                width: 100%;
+                text-align: center;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            h2 {
+                font-size: 1.8em;
+            }
+            .btn-primary {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+        }
+    </style>
+
+    <!-- JSON-LD Structured Data (Organization Schema) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Thiel Fellowship",
+      "url": "https://www.example.com/thiel-fellowship/",
+      "logo": "https://www.example.com/images/thiel-logo.png",
+      "description": "The Thiel Fellowship offers a two-year program and a $200,000 grant to young individuals who are driven to create new things rather than pursue traditional classroom education, fostering innovation and entrepreneurial spirit.",
+      "sameAs": [
+        "https://twitter.com/ThielFellowship",
+        "https://www.linkedin.com/company/thiel-foundation/",
+        "https://www.facebook.com/thielfellowship/"
+      ]
+    }
+    </script>
+    <!-- JSON-LD Structured Data (FAQPage Schema) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the Thiel Fellowship?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Thiel Fellowship is a two-year program that awards $200,000 to young people who want to build new things and create impact, rather than pursuing traditional classroom education. It supports aspiring entrepreneurs by providing capital, mentorship, and network access to launch and grow their ventures."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is eligible for the Thiel Fellowship?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The fellowship is primarily for young individuals, typically under the age of 23, who possess exceptional drive, creativity, and a compelling vision for a project or company. Applicants are selected based on their potential for impact and innovation, not academic credentials. Detailed eligibility criteria can be found on our <a href=\"/thiel-fellowship/apply/#eligibility\">application page</a>."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kind of projects does the fellowship support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Thiel Fellowship embraces a broad spectrum of innovative projects across diverse sectors including technology, science, engineering, social impact, arts, and more. The core requirement is a focus on building something novel and impactful that challenges existing paradigms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens after the two-year program?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Upon completion, fellows join a powerful global alumni network. Many continue to develop their ventures, successfully raise further funding, or pursue other entrepreneurial endeavors. The fellowship provides a robust foundation for long-term career success and sustained innovation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I apply for the Thiel Fellowship?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The application process involves submitting an online application, essays detailing your project and vision, and multiple rounds of interviews. Specific deadlines and requirements are announced annually. We encourage interested candidates to review our comprehensive <a href=\"/thiel-fellowship/apply/\">Application Process page</a> for full details."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is college still an option after the fellowship?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While the fellowship encourages fellows to defer or opt out of traditional college education to focus fully on their projects, individuals are free to choose their own path post-fellowship. Many continue their entrepreneurial journey, while some may decide to return to academia or join other organizations."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/">
+                    <img src="https://www.example.com/images/thiel-logo.png" alt="Thiel Fellowship Logo: Empowering Young Innovators">
+                    Thiel Fellowship
+                </a>
+            </div>
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#what-we-offer">What We Offer</a></li>
+                    <li><a href="#why-join">Why Join</a></li>
+                    <li><a href="/thiel-fellowship/alumni-success/">Alumni & Success Stories</a></li>
+                    <li><a href="/thiel-fellowship/faq/">FAQ</a></li>
+                    <li><a href="/thiel-fellowship/apply/" class="btn-primary">Apply Now</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
-    </section>
+    </header>
 
- 
-           <!------------------------------------------------------------------------------- Goals -------------------------------------------------------------------------------->
-          <div class="col-12">
-            <h2>Goals</h2>
-            <p>
-              I am a goal-oriented person. I work hard and work smart to reach my goal. My short term goals are to build upon the coding languages I have begun to learn and eventually take part in events and hackathons, I also want to keep my fitness levels up and try to play basketball at a higher level. I  enjoy meeting new people and getting to know them, so my goal is to make as many friends as possible as soon as I start my offline mode of  classes.
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>The Thiel Fellowship: $200,000 Grant for Young Innovators</h1>
+                <h3>Some ideas can't wait. Forge your own path.</h3>
+                <p>The Thiel Fellowship offers a two-year program and a $200,000 grant to young individuals driven to create new things rather than pursue traditional classroom education. We support ambitious entrepreneurs and visionary founders who believe in building the future now.</p>
+                <a href="/thiel-fellowship/apply/" class="btn-primary">Apply for the Fellowship Today!</a>
+            </div>
+        </section>
 
-              <br>
-              <br>
+        <section id="what-we-offer">
+            <div class="container">
+                <h2>What the Thiel Fellowship Offers</h2>
+                <p class="section-intro-text">The Thiel Fellowship is more than just a grant; it's an unparalleled opportunity to accelerate your entrepreneurial journey and make a real impact as a young entrepreneur.</p>
+                <div class="content-grid">
+                    <div class="grid-item">
+                        <h3>$200,000 Non-Dilutive Grant</h3>
+                        <p>Receive a substantial grant to fund your venture, giving you the financial independence to focus entirely on your project without the burden of tuition or student debt. This funding is designed to kickstart your innovative idea.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Elite Silicon Valley Network Access</h3>
+                        <p>Gain unparalleled access to Peter Thiel's extensive network of visionary founders, investors, scientists, and industry leaders in Silicon Valley and beyond. This is your gateway to invaluable mentorship and strategic partnerships. <a href="/thiel-fellowship/network/">Meet Our Mentors</a></p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Dedicated Mentorship & Support</h3>
+                        <p>Benefit from personalized guidance and dedicated support from experienced mentors who have built successful companies and disrupted industries. Learn from the best as you navigate the challenges of building a startup and executing your vision.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Freedom to Innovate & Build</h3>
+                        <p>Embrace the freedom to pursue your most audacious ideas without the constraints of traditional academia. This program is designed for those who believe in hands-on building, practical application, and immediate impact over theoretical learning.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="why-join" class="light-bg">
+            <div class="container">
+                <h2>Why Choose the Thiel Fellowship?</h2>
+                <p class="section-intro-text">Join a selective group of young innovators who are bypassing traditional college to build groundbreaking ventures and redefine their careers.</p>
+                <div class="content-grid">
+                    <div class="grid-item">
+                        <h3>A Different Path for Everyone</h3>
+                        <p>We believe that true innovation often comes from unconventional thinking. The Thiel Fellowship supports young individuals ready to forge their own non-traditional path, explore groundbreaking ideas, and challenge the status quo. It’s an alternative education for those who learn by doing.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Freedom to Get Stuff Done</h3>
+                        <p>Your ideas deserve immediate action. With our $200,000 grant and two years of dedicated entrepreneurial support, you have the freedom and resources to build new ventures, conduct cutting-edge research, or start a non-profit. This program minimizes distractions and maximizes your impact.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Our Network is Yours</h3>
+                        <p>Building a venture requires connections. The Thiel Fellowship provides you with an extensive network of mentors, investors, and fellow innovators. Tap into the entrepreneurial ecosystem of Silicon Valley and collaborate with a community dedicated to disruptive innovation and startup funding for young people. <a href="/thiel-fellowship/network/">Discover Our Mentors</a></p>
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 40px; font-size: 1.15em;">The Thiel Fellowship is for the audacious, the creators, the young entrepreneurs who see the future and are determined to build it now.</p>
+            </div>
+        </section>
 
-             Sports has been an integral part of my life so my long term goal will be to promote sports amongst the youngsters, I have already started my journey by teaching some of the kids in my society the game of basketball. I also want to become succesfull coder and entrepreneur in the future. Listening to many ted talks has motivated me. I would love it if I ever were given a chance to become a ted speaker.
-          </div>
-    </section>
-  </body>
+        <section id="alumni-impact">
+            <div class="container">
+                <h2>Thiel Fellows: Building the Future, Skipping College</h2>
+                <p class="section-intro-text">Our alumni network is a powerful testament to the impact of independent thinking and bold execution. Thiel Fellows have founded groundbreaking companies, secured significant venture capital funding, and driven innovation across various sectors.</p>
+                <div class="content-grid">
+                    <div class="grid-item">
+                        <h3>Real-World Impact</h3>
+                        <p>From AI and biotechnology to sustainable energy and advanced manufacturing, Thiel Fellows are at the forefront of building new ventures that solve real-world problems. Discover how our fellows are shaping industries and creating a better future.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Inspiring Success Stories</h3>
+                        <p>Learn directly from the journeys of young entrepreneurs who chose a non-traditional path. Read about their challenges, breakthroughs, and the lasting impact of the Thiel Fellowship on their careers. These are the success stories of those who dared to skip college for a startup. <a href="/thiel-fellowship/alumni-success/">Read Alumni Stories</a></p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>A Global Community of Innovators</h3>
+                        <p>Join a vibrant, supportive community of like-minded innovators from around the globe. The connections forged during the fellowship often lead to lifelong collaborations, friendships, and a powerful network for continued growth and innovation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="seen-in" class="light-bg">
+            <div class="container">
+                <h2>As Seen In</h2>
+                <p class="section-intro-text">The Thiel Fellowship and its fellows are regularly featured in leading global publications for their groundbreaking work and unconventional approach to education and entrepreneurship.</p>
+                <div class="media-mentions">
+                    <a href="https://www.nytimes.com/topic/organization/thiel-foundation" target="_blank" rel="noopener noreferrer" aria-label="Thiel Fellowship featured in The New York Times">
+                        <img src="https://www.example.com/images/logo-nyt.png" alt="New York Times Logo">
+                    </a>
+                    <a href="https://techcrunch.com/tag/thiel-fellowship/" target="_blank" rel="noopener noreferrer" aria-label="Thiel Fellowship featured in TechCrunch">
+                        <img src="https://www.example.com/images/logo-techcrunch.png" alt="TechCrunch Logo">
+                    </a>
+                    <a href="https://www.wsj.com/news/thiel-fellowship" target="_blank" rel="noopener noreferrer" aria-label="Thiel Fellowship featured in Wall Street Journal">
+                        <img src="https://www.example.com/images/logo-wsj.png" alt="Wall Street Journal Logo">
+                    </a>
+                    <a href="https://www.forbes.com/thiel-fellowship/" target="_blank" rel="noopener noreferrer" aria-label="Thiel Fellowship featured in Forbes">
+                        <img src="https://www.example.com/images/logo-forbes.png" alt="Forbes Logo">
+                    </a>
+                    <a href="https://www.bloomberg.com/news/articles/2012-05-24/thiel-fellows-peter-thiel-s-bet-on-dropping-out" target="_blank" rel="noopener noreferrer" aria-label="Thiel Fellowship featured in Bloomberg">
+                        <img src="https://www.example.com/images/logo-bloomberg.png" alt="Bloomberg Logo">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions (FAQ)</h2>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>What is the Thiel Fellowship?</summary>
+                        <p>The Thiel Fellowship is a two-year program that awards $200,000 to young people who want to build new things and create impact, rather than pursuing traditional classroom education. It supports aspiring entrepreneurs by providing capital, mentorship, and network access to launch and grow their ventures.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Who is eligible for the Thiel Fellowship?</summary>
+                        <p>The fellowship is primarily for young individuals, typically under the age of 23, who possess exceptional drive, creativity, and a compelling vision for a project or company. Applicants are selected based on their potential for impact and innovation, not academic credentials. Detailed eligibility criteria can be found on our <a href="/thiel-fellowship/apply/#eligibility">Eligibility & Application page</a>.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>What kind of projects does the fellowship support?</summary>
+                        <p>The Thiel Fellowship embraces a broad spectrum of innovative projects across diverse sectors including technology, science, engineering, social impact, arts, and more. The common thread is a focus on building something novel and impactful that challenges existing paradigms. We fund disruptive innovation grants for youth.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>What happens after the two-year program?</summary>
+                        <p>Upon completion, fellows join a powerful global alumni network. Many continue to develop their ventures, successfully raise further funding, or pursue other entrepreneurial endeavors. The fellowship provides a robust foundation for long-term career success and sustained innovation.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>How do I apply for the Thiel Fellowship?</summary>
+                        <p>The application process involves submitting an online application, essays detailing your project and vision, and multiple rounds of interviews. Specific deadlines and requirements are announced annually. We encourage interested candidates to review our comprehensive <a href="/thiel-fellowship/apply/">Application Process page</a> for full details.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Is college still an option after the fellowship?</summary>
+                        <p>While the fellowship encourages fellows to defer or opt out of traditional college education to focus fully on their projects, individuals are free to choose their own path post-fellowship. Many continue their entrepreneurial journey, while some may decide to return to academia or join other organizations.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Skip College and Build Your Venture?</h2>
+                <p>Don't let traditional paths hold you back. If you're a young entrepreneur with a groundbreaking idea that can't wait, the Thiel Fellowship is your unparalleled opportunity to turn it into reality with a $200,000 grant and elite mentorship.</p>
+                <a href="/thiel-fellowship/apply/" class="btn-primary">Apply for the Thiel Fellowship Today!</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Thiel Fellowship. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://twitter.com/ThielFellowship" target="_blank" rel="noopener noreferrer" aria-label="Thiel Fellowship on Twitter"><img src="https://www.example.com/images/icon-twitter.svg" alt="Twitter icon" width="24" height="24"></a> <!-- Placeholder SVG -->
+                <a href="https://www.linkedin.com/company/thiel-foundation/" target="_blank" rel="noopener noreferrer" aria-label="Thiel Fellowship on LinkedIn"><img src="https://www.example.com/images/icon-linkedin.svg" alt="LinkedIn icon" width="24" height="24"></a> <!-- Placeholder SVG -->
+                <a href="https://www.facebook.com/thielfellowship/" target="_blank" rel="noopener noreferrer" aria-label="Thiel Fellowship on Facebook"><img src="https://www.example.com/images/icon-facebook.svg" alt="Facebook icon" width="24" height="24"></a> <!-- Placeholder SVG -->
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
+```
